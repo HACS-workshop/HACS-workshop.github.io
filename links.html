@@ -4,4 +4,255 @@ title: HACS &ndash; Projects &amp; Links
 date: 2019-06-04
 ---
 
+<p>
+Please find below links to projects, tools, libraries, and general reading material
+that is relevant to HACS. Most of these projects are with involvement of HACS participants;
+some grew out of a collaboration that started through the HACS workshop.
+<p>
+
+<h3>Formally verified crypto</h3>
+
+<ul>
+  <li>
+    <a href="http://flint.cs.yale.edu/certikos/">CertiKOS</a>: 
+    kernel with clean-slate design with end-to-end guarantees on extensibility, security, and resilience
+  </li>
+
+  <li>
+    <a href="https://github.com/mitls/hacl-star">hacl&ast;</a>: 
+    an F&ast; verified cryptographic library
+  </li>
+
+  <li>
+    <a href="https://github.com/GaloisInc/hacrypto">hacrypto</a>: 
+    snapshots, architectures, audits, validation, and verification of crypto libraries
+  </li>
+
+  <li>
+    <a href="https://mitls.org/">miTLS</a>: 
+    a verified reference implementation of TLS
+  </li>
+
+  <li>
+    <a href="https://github.com/benlaurie/openssl/tree/saw/proof">WIP: applying SAW to OpenSSL</a>
+  </li>
+
+  <li>
+    <a href="https://sel4.systems/">seL4</a>: 
+    an L4 kernel verified with Isabelle/HOL
+  </li>
+
+  <li>
+    <a href="http://www.verificatum.com/index.html">Verificatum</a>: 
+    verified crypto for voting protocols
+  </li>
+</ul>
+
+<h3>Tools for verification</h3>
+
+<ul>
+  <li>
+    <a href="https://autognp.github.io">AutoG&amp;P</a>: tool for performing highly automated game-hopping proofs for
+    pairing-based cryptographic primitives
+  </li>
+
+  <li>
+    <a href="https://github.com/diffblue/cbmc">CBMC</a>: a bounded model checker for C and Java
+  </li>
+
+  <li>
+    <a href="http://compcert.inria.fr/">CompCert</a> A verified C compiler, written in Coq 
+  </li>
+
+  <li>
+    The <a href="https://coq.inria.fr/">Coq</a> Proof Assistant<br>
+    <em>While you can install Coq with <code>apt-get install coqide</code> or executing the binary/dmg if you use
+      Windows. The best way to install coq is to use <a href="https://opam.ocaml.org/">opam</a></em>:
+    <pre><code>sudo apt-get <span class="hljs-keyword">install</span> gcc 
+sudo apt-<span class="hljs-keyword">get</span> <span class="hljs-keyword">install</span> opam
+opam init
+opam <span class="hljs-keyword">switch</span> coq <span class="hljs-comment">--alias-of 4.04.0</span>
+opam <span class="hljs-keyword">install</span> coq 
+opam <span class="hljs-keyword">install</span> coqide
+opam repo <span class="hljs-keyword">add</span> coq-released https://coq.inria.fr/opam/released
+opam <span class="hljs-keyword">install</span> coq-mathcomp-ssreflect
+opam <span class="hljs-keyword">install</span> menhir
+    </code></pre>
+  </li>
+
+  <li>
+    <a href="https://github.com/GaloisInc/crucible">Crucible</a>: 
+    a language-agnostic library for performing forward symbolic execution of imperative progams
+  </li>
+
+  <li>
+    <a href="http://cryptol.net/">Cryptol</a>: 
+    a domain-specific language for specifying cryptographic algorithms
+  </li>
+
+  <li>
+    <a href="https://www.easycrypt.info/trac/">EasyCrypt</a>: 
+    a toolset for reasoning about relational properties of
+    probabilistic computations with adversarial code
+  </li>
+
+  <li>
+    <a href="http://entroposcope.verifythis.org">Entroposcope</a>: 
+    a tool for finding entropy loss bugs in PRNGs
+  </li>
+
+  <li>
+    <a href="https://www.fstar-lang.org/">F&ast;</a>: 
+    an ML-like language with a type system for program verification
+  </li>
+
+  <li>
+    <a href="https://github.com/mit-plv/fiat-crypto/">Fiat Crypto</a>: 
+    automatic derivation of fast crypto-primitive code (for now just ECC) from specifications in Coq, 
+    generating proofs along the way 
+  </li>
+
+  <li>
+    <a href="http://frama-c.com/">Frama-C</a>: 
+    an extensible and collaborative platform dedicated to source-code analysis of C software
+  </li>
+
+  <li>
+    <a href="http://gfverif.cryptojedi.org">gfverif</a>: 
+    fast and easy verification of finite-field arithmetic
+  </li>
+
+  <li>
+    <a href="https://github.com/HACS-workshop/hacspec">hacspec</a>: 
+    a language for specifying crypto
+  </li>
+
+  <li>
+    <a href="http://ivorylang.org/">Ivory</a>: 
+    an eDSL for safe systems programming. You can think of Ivory as a safer C, embedded in Haskell
+  </li>
+
+  <li>
+    <a href="http://plv.csail.mit.edu/kami/">Kami</a>: 
+    tool for verified hardware design (ISA-&gt;RTL)
+  </li>
+
+  <li>
+    <a href="http://www.key-project.org/">KeY</a>: 
+    a deductive verifier of functional correctness of Java programs (wrt properties annotated in JML)
+  </li>
+
+  <li>
+    <a href="https://github.com/FStarLang/kremlin">Kremlin</a>: 
+    translate a subset of F&ast; to C
+  </li>
+
+  <li>
+    <a href="https://saw.galois.com/">Software Analysis Workbench (SAW)</a>
+  </li>
+
+  <li>
+    <a href="https://github.com/project-everest/vale">Vale</a>: 
+    Verified Assembly Language for Everest
+  </li>
+
+  <li>
+    <a href="https://github.com/verifast/verifast/">VeriFast</a>: 
+    a verifier for single-threaded and multithreaded C and Java programs 
+    annotated with preconditions and postconditions written in separation logic
+  </li>
+
+  <li>
+    <a href="http://deepspec.org/research/VST/">Verified Software Toolchain (VST)</a>: 
+    software toolchain which includes static analyzers to check assertions about your program; 
+    optimizing compilers to translate your program to machine language; 
+    operating systems and libraries to supply context for your program
+  </li>
+
+  <li>
+    <a href="https://www.easycrypt.info/trac/wiki/ZooCrypt">ZooCrypt</a>: 
+    fully automated analysis of padding-based encryption
+  </li>
+</ul>
+
+
+<h3>Fuzzing tools</h3>
+
+<ul>
+  <li>
+    <a href="http://lcamtuf.coredump.cx/afl/">AFL</a>: 
+    a fuzzer
+  </li>
+
+  <li>
+    <a href="http://libfuzzer.info">libFuzzer</a>: 
+    a fuzzer
+  </li>
+
+  <li>
+    <a href="https://github.com/google/oss-fuzz">OSS-Fuzz</a>: 
+    fuzzing service for open-source software
+  </li>
+</ul>
+
+
+<h3>Collections</h3>
+
+<ul>
+  <li>
+    <a href="http://deepspec.org/">DeepSpec</a>
+  </li>
+
+  <li>
+    <a href="https://project-everest.github.io/">Project Everest</a>
+  </li>
+</ul>
+
+<h3>Reading material</h3>
+
+<ul>
+  <li>
+    <a href="http://formal.iti.kit.edu/~klebanov/pubs/libgcrypt-cve-2016-6313.pdf">
+      Entropy Loss and Output Predictability in the Libgcrypt PRNG</a>
+  </li>
+
+  <li>
+    <a href="https://blog.fuzzing-project.org/51-Fun-with-Bignums-Crashing-MatrixSSL-and-more.html">
+      Fun with Bignums: Crashing MatrixSSL and more</a>
+  </li>
+
+  <li>
+    <a href="http://www.cs.princeton.edu/~appel/papers/modsec.pdf">
+      Modular Verification for Computer Security</a>
+  </li>
+
+  <li>
+    <a href="http://formal.iti.kit.edu/~klebanov/pubs/ccs2016.pdf">
+      Practical Detection of Entropy Loss in Pseudo-Random Number Generators</a>
+  </li>
+
+  <li>
+    <a href="http://www.cs.princeton.edu/~appel/papers/verif-sha-2.pdf">
+      Second Edition: Verification of a Cryptographic Primitive: SHA-256</a>
+  </li>
+
+  <li><a href="http://www.cs.princeton.edu/~appel/papers/verified-hmac.pdf">Verified Correctness and Security of OpenSSL HMAC</a>, 
+    by Lennart Beringer, Adam Petcher, Katherine Q. Ye, and Andrew W. Appel. In 24th USENIX Security Symposium, 
+    pages 207&ndash;221, August 2015
+  </li>
+
+  <li>
+    <a href="https://galois.com/blog/2016/09/verifying-s2n-hmac-with-saw/">Verifying s2n HMAC with SAW</a>
+  </li>
+
+  <li>
+    <a href="https://www.cis.upenn.edu/~bcpierce/sf/current/index.html">Software Foundations</a>, 
+    by Benjamin C. Pierce, Arthur Azevedo de Amorim, Chris Casinghino, Marco Gaboardi, Michael Greenberg, Cătălin Hriţcu, Vilhelm
+    Sjöberg, Brent Yorgey
+  </li>
+
+  <li>
+    <a href="http://adam.chlipala.net/cpdt/">Certified Programming with Dependent Types</a> by Adam Chlipala
+  </li>
+</ul>
 
