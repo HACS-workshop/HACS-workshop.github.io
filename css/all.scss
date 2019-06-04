@@ -1,6 +1,8 @@
-<!--#include file="colors.css" -->
+---
+---
+@include 'colors';
 
-<!--#set var="maxwidth" value="1920px" -->
+$maxwidth: 1920px
 
 /* pavanam-regular - latin */
 @font-face {
@@ -25,13 +27,13 @@
 	height:320px;
 	padding-top: 1px;
 	padding-left: 20px;
-  color: <!--#echo var="darktext" -->;
-  text-shadow: 2px 2px 2px <!--#echo var="lighttext" -->;
+  color: $darktext;
+  text-shadow: 2px 2px 2px $lighttext;
 }
 
 body {
   font-family: 'Pavanam', sans-serif;
-  background-color: <!--#echo var="backcolor" -->;
+  background-color: $backcolor;
   padding: 0px;
   margin: 0px;
   width: auto;
@@ -39,7 +41,7 @@ body {
 }
 
 body a{
-  color: <!--#echo var="darkblue" -->;
+  color: $darkblue;
 }
 
 th{
@@ -47,14 +49,14 @@ th{
 }
 
 #wrap{
-  max-width: <!--#echo var="maxwidth" -->;
+  max-width: $maxwidth;
   margin: 0 auto;
 }
   
 #surround{
   display: inline-block;
   width:100%;
-  max-width: <!--#echo var="maxwidth" -->;
+  max-width: $maxwidth;
 }
 
 #menu {
@@ -74,23 +76,23 @@ th{
   margin-bottom: 8px;
   width: 135px;
   text-align: center;
-  color: <!--#echo var="darktext" -->;
-  box-shadow: 5px 5px 5px <!--#echo var="shadow" -->;
+  color: $darktext;
+  box-shadow: 5px 5px 5px $shadow;
 }
   
 .entry:hover {
-  box-shadow: 1px 1px 1px <!--#echo var="shadow" -->;
+  box-shadow: 1px 1px 1px $shadow;
 }
 
 .main {
-  background-color: <!--#echo var="rured" -->;
-  color: <!--#echo var="lighttext" -->;
+  background-color: $rured;
+  color: $lighttext;
 }
 
 #content {
   position:relative;
 	background-color: white; 
-  box-shadow: 5px 5px 5px <!--#echo var="shadow" -->;
+  box-shadow: 5px 5px 5px $shadow;
 	min-height: 300px;
 	padding: 20px;
 	padding-top: 10px;
@@ -104,12 +106,12 @@ th{
 }
 
 #content td{
-  background-color: <!--#echo var="lightbox" -->;
+  background-color: $lightbox;
   padding: 3px;
 }
 
 #content th{
-  background-color: <!--#echo var="backcolor" -->;
+  background-color: $backcolor;
   padding: 3px;
 }
 
@@ -118,7 +120,7 @@ th{
   bottom: 10px;
   left: 10px;
   right: 10px;
-  background-color: <!--#echo var="lightbox" -->;
+  background-color: $lightbox;
   text-align: right;
   padding:5px;
   margin-top: 20px;
@@ -136,7 +138,7 @@ th{
 .floatbox{
   display: inline-block;
   vertical-align:top;
-  background-color: <!--#echo var="lightbox" -->;
+  background-color: $lightbox;
   padding:5px;
   margin: 3px;
   text-decoration: none;
@@ -144,7 +146,7 @@ th{
 }
 
 .floatbox th{
-  background-color: <!--#echo var="backcolor" -->;
+  background-color: $backcolor;
   padding: 3px;
 }
 
