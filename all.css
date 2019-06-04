@@ -1,0 +1,176 @@
+<!--#include file="colors.css" -->
+
+<!--#set var="maxwidth" value="1920px" -->
+
+/* pavanam-regular - latin */
+@font-face {
+  font-family: 'Pavanam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/pavanam-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Pavanam'), local('Pavanam-Regular'),
+  url('./fonts/pavanam-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/pavanam-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('./fonts/pavanam-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/pavanam-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./fonts/pavanam-v2-latin-regular.svg#Pavanam') format('svg'); /* Legacy iOS */
+}
+
+
+#top {
+ 	background-image: url("/src/santiago3.jpg");
+	background-position: top left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:320px;
+	padding-top: 1px;
+	padding-left: 20px;
+  color: <!--#echo var="darktext" -->;
+  text-shadow: 2px 2px 2px <!--#echo var="lighttext" -->;
+}
+
+body {
+  font-family: 'Pavanam', sans-serif;
+  background-color: <!--#echo var="backcolor" -->;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  overflow:scroll;
+}
+
+body a{
+  color: <!--#echo var="darkblue" -->;
+}
+
+th{
+  text-align: left;
+}
+
+#wrap{
+  max-width: <!--#echo var="maxwidth" -->;
+  margin: 0 auto;
+}
+  
+#surround{
+  display: inline-block;
+  width:100%;
+  max-width: <!--#echo var="maxwidth" -->;
+}
+
+#menu {
+  width:98vw;
+  max-width:100%;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+
+.entry {
+  display: inline-block;
+  padding:8px;
+  padding-left:4px;
+  padding-right:4px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  width: 135px;
+  text-align: center;
+  color: <!--#echo var="darktext" -->;
+  box-shadow: 5px 5px 5px <!--#echo var="shadow" -->;
+}
+  
+.entry:hover {
+  box-shadow: 1px 1px 1px <!--#echo var="shadow" -->;
+}
+
+.main {
+  background-color: <!--#echo var="rured" -->;
+  color: <!--#echo var="lighttext" -->;
+}
+
+#content {
+  position:relative;
+	background-color: white; 
+  box-shadow: 5px 5px 5px <!--#echo var="shadow" -->;
+	min-height: 300px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 90px;
+	margin: 8px;
+	margin-top: 18px;
+}
+
+#content h2 {
+  text-align:center;
+}
+
+#content td{
+  background-color: <!--#echo var="lightbox" -->;
+  padding: 3px;
+}
+
+#content th{
+  background-color: <!--#echo var="backcolor" -->;
+  padding: 3px;
+}
+
+#footer{
+  position:absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: <!--#echo var="lightbox" -->;
+  text-align: right;
+  padding:5px;
+  margin-top: 20px;
+}
+
+.float{
+  display: inline-block;
+  vertical-align:top;
+  padding:5px;
+  margin: 3px;
+  text-decoration: none;
+  min-width:20%;
+}
+
+.floatbox{
+  display: inline-block;
+  vertical-align:top;
+  background-color: <!--#echo var="lightbox" -->;
+  padding:5px;
+  margin: 3px;
+  text-decoration: none;
+  min-width:20%;
+}
+
+.floatbox th{
+  background-color: <!--#echo var="backcolor" -->;
+  padding: 3px;
+}
+
+
+.floatbox td{
+  background-color:white;
+  padding: 3px;
+}
+
+.stats td{
+  text-align: right;
+}
+
+.former {
+  display: inline-block;
+  padding: 3px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+.code {
+  border-style:dashed; 
+  border-width:1px; 
+  background-color:#dddddd; 
+  padding:5px; 
+  margin:5px; 
+  font-family:monospace;
+}
+

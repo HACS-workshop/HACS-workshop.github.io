@@ -1,0 +1,7 @@
+<div id="footer">
+<!--#config timefmt="%b %d, %Y" -->
+Design 2018 by <a href="https://cryptojedi.org">Peter Schwabe</a>, last updated <!--#echo var="LAST_MODIFIED"-->
+<br>
+Title photo by <a href="https://www.flickr.com/photos/61013352@N07/">Luxbao</a> (modified)
+(<a href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>)
+</div>
