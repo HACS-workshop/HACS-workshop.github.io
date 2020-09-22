@@ -5,48 +5,75 @@ date: 2019-06-04
 ---
 
 <p>
-Please find below links to projects, tools, libraries, and general reading material
-that is relevant to HACS. Most of these projects are with involvement of HACS participants;
-some grew out of a collaboration that started through the HACS workshop.
+Please find below a non-comprehensive list of links to projects,
+tools, and libraries that are relevant to HACS. Many of these projects
+are with involvement of HACS participants; some grew out of
+collaborations that started through the HACS workshop.
+Please email us if you would like your project to be listed here.
 <p>
 
 <h3>Formally verified crypto</h3>
 
 <ul>
   <li>
-    <a href="http://flint.cs.yale.edu/certikos/">CertiKOS</a>: 
-    kernel with clean-slate design with end-to-end guarantees on extensibility, security, and resilience
+    <a href="https://github.com/fmlab-iis/cryptoline">Cryptoline</a>: 
+    verified low-level implementations of mathematical constructs in mainstream libraries
   </li>
 
   <li>
-    <a href="https://github.com/mitls/hacl-star">hacl&ast;</a>: 
-    an F&ast; verified cryptographic library
+    <a href="https://github.com/mit-plv/fiat-crypto/">Fiat Crypto</a>: 
+    automatic derivation of fast field arithmatic code from specifications in Coq
+  </li>
+
+  <li>
+    <a href="https://github.com/mitls/hacl-star">HACL&ast;</a>: 
+    a verified cryptographic library in F&ast; including verified assembly code from Vale
   </li>
 
   <li>
     <a href="https://github.com/GaloisInc/hacrypto">hacrypto</a>: 
-    snapshots, architectures, audits, validation, and verification of crypto libraries
+    verified crypto primitives using SAW/Cryptol
   </li>
 
   <li>
-    <a href="https://mitls.org/">miTLS</a>: 
-    a verified reference implementation of TLS
+    <a href="https://jasmin-lang.github.io/">Jasmin</a>: 
+    verified assembly implementations of crypto primitives
   </li>
-
+<!--
   <li>
     <a href="https://github.com/benlaurie/openssl/tree/saw/proof">WIP: applying SAW to OpenSSL</a>
   </li>
+-->
+</ul>
 
+<h3>Other verification projects</h3>
+<ul>
+  <li>
+    <a href="http://flint.cs.yale.edu/certikos/">CertiKOS</a>: 
+    kernel with clean-slate design with end-to-end guarantees on extensibility, security, and resilience
+  </li>
+  <li>
+    <a href="http://compcert.inria.fr/">CompCert</a> A verified C compiler, written in Coq 
+  </li>
   <li>
     <a href="https://sel4.systems/">seL4</a>: 
     an L4 kernel verified with Isabelle/HOL
   </li>
+  <li>
+    <a href="https://mitls.org/">miTLS</a>: 
+    a verified reference implementation of TLS
+  </li>
+  <li>
+    <a href="http://deepspec.org/">DeepSpec</a>:
+    specification and verification of full functional correctness of software and hardware
+  </li>
 
   <li>
-    <a href="http://www.verificatum.com/index.html">Verificatum</a>: 
-    verified crypto for voting protocols
+    <a href="https://project-everest.github.io/">Project Everest</a>:
+    verified end-to-end secure transport
   </li>
 </ul>
+
 
 <h3>Tools for verification</h3>
 
@@ -63,21 +90,8 @@ some grew out of a collaboration that started through the HACS workshop.
   <li>
     <a href="http://compcert.inria.fr/">CompCert</a> A verified C compiler, written in Coq 
   </li>
-
   <li>
     The <a href="https://coq.inria.fr/">Coq</a> Proof Assistant<br>
-    <em>While you can install Coq with <code>apt-get install coqide</code> or executing the binary/dmg if you use
-      Windows. The best way to install coq is to use <a href="https://opam.ocaml.org/">opam</a></em>:
-    <pre><code>sudo apt-get <span class="hljs-keyword">install</span> gcc 
-sudo apt-<span class="hljs-keyword">get</span> <span class="hljs-keyword">install</span> opam
-opam init
-opam <span class="hljs-keyword">switch</span> coq <span class="hljs-comment">--alias-of 4.04.0</span>
-opam <span class="hljs-keyword">install</span> coq 
-opam <span class="hljs-keyword">install</span> coqide
-opam repo <span class="hljs-keyword">add</span> coq-released https://coq.inria.fr/opam/released
-opam <span class="hljs-keyword">install</span> coq-mathcomp-ssreflect
-opam <span class="hljs-keyword">install</span> menhir
-    </code></pre>
   </li>
 
   <li>
@@ -88,6 +102,16 @@ opam <span class="hljs-keyword">install</span> menhir
   <li>
     <a href="http://cryptol.net/">Cryptol</a>: 
     a domain-specific language for specifying cryptographic algorithms
+  </li>
+
+  <li>
+    <a href="https://github.com/fmlab-iis/cryptoline">Cryptoline</a>: 
+    verification of low-level implementations of mathematical constructs
+  </li>
+
+  <li>
+    <a href="http://cryptoverif.inria.fr">CryptoVerif</a>:
+    cryptographic protocol verifier in the computational model
   </li>
 
   <li>
@@ -133,6 +157,11 @@ opam <span class="hljs-keyword">install</span> menhir
   </li>
 
   <li>
+    <a href="https://jasmin-lang.github.io/">Jasmin</a>: 
+    high-speed and high-assurance cryptographic software in assembly
+  </li>
+
+  <li>
     <a href="http://plv.csail.mit.edu/kami/">Kami</a>: 
     tool for verified hardware design (ISA-&gt;RTL)
   </li>
@@ -146,9 +175,18 @@ opam <span class="hljs-keyword">install</span> menhir
     <a href="https://github.com/FStarLang/kremlin">Kremlin</a>: 
     translate a subset of F&ast; to C
   </li>
+  <li>
+    <a href="http://proverif.inria.fr">ProVerif</a>:
+    automatic cryptographic protocol verifier in the formal (Dolev-Yao) model
+  </li>
 
   <li>
     <a href="https://saw.galois.com/">Software Analysis Workbench (SAW)</a>
+  </li>
+
+  <li>
+    <a href="https://tamarin-prover.github.io/">Tamarin</a>:
+    security protocol verification tool that supports both falsification and unbounded verification in the symbolic model.
   </li>
 
   <li>
@@ -195,19 +233,7 @@ opam <span class="hljs-keyword">install</span> menhir
   </li>
 </ul>
 
-
-<h3>Collections</h3>
-
-<ul>
-  <li>
-    <a href="http://deepspec.org/">DeepSpec</a>
-  </li>
-
-  <li>
-    <a href="https://project-everest.github.io/">Project Everest</a>
-  </li>
-</ul>
-
+<!--
 <h3>Reading material</h3>
 
 <ul>
@@ -256,3 +282,4 @@ opam <span class="hljs-keyword">install</span> menhir
   </li>
 </ul>
 
+-->
