@@ -41,7 +41,7 @@ th{
   max-width: $maxwidth;
   margin: 0 auto;
 }
-  
+
 #surround{
   display: inline-block;
   width:100%;
@@ -157,11 +157,47 @@ th{
 }
 
 .code {
-  border-style:dashed; 
-  border-width:1px; 
-  background-color:#dddddd; 
-  padding:5px; 
-  margin:5px; 
+  border-style:dashed;
+  border-width:1px;
+  background-color:#dddddd;
+  padding:5px;
+  margin:5px;
   font-family:monospace;
 }
 
+#sponsors-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #sponsors-box {
+    margin-left: 0;
+  }
+}
+
+#lead-sponsors-box {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  #lead-sponsors-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+#lead-sponsors-box li {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+#lead-sponsors-box li a img {
+  width: 200px;
+  margin: 0;
+}
